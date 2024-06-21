@@ -1,0 +1,245 @@
+/**** MENU CONTAINER ***************************************************************/
+.container {
+    width: 100%;
+    height: 100vh;
+    clip-path: circle(0 at calc(100% - 985px) 125px);
+    background: #c3c3c3;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    /*display: flex;*/
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    /* overflow-y: auto; */
+    z-index: 100;
+}
+
+.dark .container {
+    background-color: #0b0b0c;
+}
+
+.container_logo {
+    width: 122px;
+    height: 129px;
+    top: 0%;
+    padding: 76px 100px;
+    /* display: inline-block; */
+    position: absolute;
+}
+
+.dark .container_logo {
+    filter: invert();
+}
+
+
+/**** LEFT SIDE (OPTIONS) **************/
+.menu_list {
+    flex-direction: column;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-top: 6%;
+    padding-right: 40px;
+}
+
+.menu_item:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.menu_link {
+    color: #0b0b0c;
+
+    font-family: 'Hug Me Tight', sans-serif;
+    font-size: 65px;
+    font-weight: normal;
+    text-decoration: none;
+    display: inline-flex;
+    position: relative;
+}
+
+.dark .menu_link {
+    color: #fff;
+}
+
+/**** RIGHT SIDE (INFORMATION) **********/
+.menu_list_bottom {
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+    position: fixed; /* Change position to fixed */
+    bottom: 0; /* Align to the bottom of the viewport */
+    left: 0; /* Align to the left edge of the viewport */
+    width: 100%; /* Occupy the full width of the viewport */
+    align-items: baseline;
+    padding-left: 16.3%;
+    padding-top: 3.5%;
+}
+
+
+.menu_list_bottom:not(:last-child) {
+    margin-left: 24%;
+}
+
+.menu_item_bottom:not(:last-child) {
+    letter-spacing: 0.07em;
+    color: #0b0b0c;
+    font-family: 'MetropolisRegular', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 15%;
+}
+
+.dark .menu_item_bottom {
+    color: #fff;
+}
+
+.follow_options {
+    letter-spacing: 0.06em;
+    font-family: 'MetropolisRegular', sans-serif;
+    font-weight: 100;
+    display: flex;
+}
+
+.discord_logo {
+    width: 25px;
+    padding-top: 1px;
+}
+
+.dark .discord_logo {
+    filter: invert();
+}
+
+.youtube_logo {
+    width: 27px;
+    padding-left: 4px;
+}
+
+.dark .youtube_logo {
+    filter: invert();
+}
+
+.instagram_logo {
+    width: 20px;
+    padding-top: 3.5px;
+    padding-left: 4px;
+}
+
+.dark .instagram_logo {
+    filter: invert();
+}
+
+.policy_options {
+    letter-spacing: 0.06em;
+    padding-bottom: 20px;
+    font-family: 'MetropolisRegular', sans-serif;
+    font-weight: 100;
+    display: flex;
+}
+
+.policy_option {
+    margin-top: 4%;
+    margin-right: 1%;
+    margin-left: 1%;
+    text-decoration: none;
+    color: #0b0b0c;
+}
+
+.dark .policy_option {
+    color: #fff;
+}
+
+.policy_option:hover {
+    color: #5d5d72;
+}
+
+.sustainability_green {
+    color: #017951;
+}
+
+.dark .sustainability_green {
+    color: #017951;
+}
+
+/***********************************************************************************/
+
+  /* responsive css */
+  @media (max-width: 1800px) {
+
+    .menu_link {
+        font-size: 52px;
+    }
+
+    .menu_list_bottom {
+        font-size: 12px;
+        padding-left: 19.8%;
+        padding-top: 2%;
+    }
+
+    .discord_logo {
+        width: 17px;
+    }
+
+    .youtube_logo {
+        width: 18px;
+    }
+
+    .instagram_logo {
+        width: 14px;
+        padding-top: 2.5px;
+    }
+
+    .container_logo {
+        padding: 60px 80px;
+    }
+
+    .container_logo img {
+        width: 100px;
+    }
+  }
+
+  @media (max-width: 1198px) {
+    .container_logo {
+        padding: 60px 0px;
+        left: 0;
+    }
+
+    .container_logo img {
+        width: 70px;
+    }
+
+    .menu_list {
+        padding-top: 20%;
+        padding-right: 0px;
+    }
+    
+    .menu_item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .menu_link {
+        font-size: 40px;
+    }
+    
+    .menu_list_bottom {
+        font-size: 15px;
+        display: block;
+        position: fixed; /* Change position to fixed */
+        bottom: 0; /* Align to the bottom of the viewport */
+        left: 0; /* Align to the left edge of the viewport */
+        width: 100%; /* Occupy the full width of the viewport */
+        align-items: baseline;
+        padding-left: 0%;
+        padding-top: 0;
+    }
+
+    .policy_options {
+        justify-content: center;
+        padding-bottom: 10px;
+        display: flex;
+    }
+
+    .follow_options {
+        display: block;
+    }
+  }

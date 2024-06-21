@@ -1,0 +1,643 @@
+.product-left-text-container {
+    font-family: 'MetropolisRegular', sans-serif;
+    letter-spacing: 0.08em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    /* Set width to half of the screen */
+    height: 100%;
+    /* Take full height of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-centering-div {}
+
+.show-content .product-left-text-container {
+    display: block;
+}
+
+.product-left-text-title {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 47px;
+    /* padding-left: 297px; */
+    margin: 0;
+}
+
+.dark .product-left-text-title {
+    color: #e0e0e0;
+}
+
+.product-left-text-header {
+    /* font-weight: 600; */
+    font-size: 16px;
+    line-height: 16pt;
+    /* padding-left: 297px; */
+    max-width: 250px;
+}
+
+.dark .product-left-text-header {
+    color: #e0e0e0;
+}
+
+.product-left-text-bottom {
+    font-size: 17px;
+    line-height: 16pt;
+    letter-spacing: 0.008em;
+    padding-left: 0px;
+    list-style: none;
+    /* padding-left: 313px; */
+}
+
+.dark .product-left-text-bottom {
+    color: #e0e0e0;
+}
+
+.li-continuation {
+    list-style-type: none;
+    text-indent: -20px;
+    /* Adjust the value to align the continuation text with the bullet point */
+}
+
+.product-right-container {
+    font-family: 'MetropolisRegular', sans-serif;
+    letter-spacing: 0.08em;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.color-options {
+    font-family: 'MetropolisRegular', sans-serif;
+    letter-spacing: 0.03em;
+    display: flex;
+    /* justify-content: flex-end; */
+    /* margin-right: 20px; */
+    /* Adjust the spacing as needed */
+    /* position: absolute;
+    top: 400px;
+    right: 300px; */
+}
+
+.color-option {
+    font-size: 20px;
+    /* font-weight: bold; */
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.dark .color-option {
+    color: #e0e0e0;
+}
+
+
+.color-option.selected {
+    color: #000;
+}
+
+.dark .color-option.selected {
+    color: #e0e0e0;
+}
+
+.color-option.not-selected {
+    color: #a5a5a5;
+}
+
+
+.price {
+    font-family: 'MetropolisRegular', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.03em;
+    /* position: absolute;
+    top: 450px;
+    right: 405px; */
+}
+
+.dark .price {
+    color: #e0e0e0;
+}
+
+
+#product-container0 {
+    display: none;
+    opacity: 0;
+    /* Set initial opacity to 0 */
+    transition: opacity 0.5s ease;
+    /* Add fade transition properties */
+}
+
+#product-container1 {
+    display: none;
+    opacity: 0;
+    /* Set initial opacity to 0 */
+    transition: opacity 0.5s ease;
+    /* Add fade transition properties */
+}
+
+#product-container2 {
+    display: none;
+    opacity: 0;
+    /* Set initial opacity to 0 */
+    transition: opacity 0.5s ease;
+    /* Add fade transition properties */
+}
+
+#product-container3 {
+    display: none;
+    opacity: 0;
+    /* Set initial opacity to 0 */
+    transition: opacity 0.5s ease;
+    /* Add fade transition properties */
+}
+
+#model1 {
+    /* make the snake's specific button cover the hole zone */
+    background-color: transparent !important;
+    flex: 1;
+    border: none;
+    cursor: url('../assets/cart_30x30.png') 55 55, auto;
+}
+
+#model2 {
+    /* make the shenon's specific button cover the hole zone */
+    background-color: transparent !important;
+    flex: 1;
+    border: none;
+    cursor: url('../assets/cart_30x30.png') 55 55, auto;
+}
+
+#model3 {
+    /* make the model3's specific button cover the hole zone */
+    background-color: transparent !important;
+    flex: 1;
+    border: none;
+    cursor: url('../assets/cart_30x30.png') 55 55, auto;
+}
+
+#model4 {
+    /* make the model4's specific button cover the hole zone */
+    background-color: transparent !important;
+    flex: 1;
+    border: none;
+    cursor: url('../assets/cart_30x30.png') 55 55, auto;
+}
+
+
+
+.fade-in-btn {
+    animation: fadeInAnimation 0.5s ease;
+    /* Add a fade-in animation with a duration of 0.5 seconds */
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        /* Start with opacity 0 */
+    }
+
+    to {
+        opacity: 1;
+        /* Fade in to opacity 1 */
+    }
+}
+
+.fade-out-btn {
+    animation: fadeOutAnimation 0.5s ease;
+    /* Add a fade-out animation with a duration of 0.5 seconds */
+}
+
+@keyframes fadeOutAnimation {
+    from {
+        opacity: 1;
+        /* Start with opacity 1 */
+    }
+
+    to {
+        opacity: 0;
+        /* Fade out to opacity 0 */
+    }
+}
+
+
+
+.snake-background-container {
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+    /* z-index: -9999999; */
+    display: flex;
+    /* Add flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    position: absolute;
+}
+
+.snake-background-item {
+    position: relative;
+    width: 60vh;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.snake-background-item img {
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* object-fit: cover; */
+    transform: scale(1.5);
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dark .snake-background-item img {
+    filter: invert();
+}
+
+.snake-background-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e0e0e0;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dark .snake-background-overlay {
+    background-color: #0B0B0C;
+}
+
+.transition-active .snake-background-overlay {
+    top: -100%;
+}
+
+/*-model2 background-*/
+
+.model2-background-container {
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+    /* z-index: -9999999; */
+    /* display: flex; */
+    /* Add flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    position: absolute;
+   
+}
+
+.model2-background-item {
+    position: relative;
+    width: 60vh;
+    height: 100%;
+    overflow: hidden;
+    }
+
+
+.model2-background-item img {
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* object-fit: cover; */
+    transform: scale(1.5);
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dark .model2-background-item img {
+    filter: invert();
+}
+
+.model2-background-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e0e0e0;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dark .model2-background-overlay {
+    background-color: #0B0B0C;
+}
+
+.transition-active .model2-background-overlay {
+    top: -100%;
+}
+
+/*-model3 background-*/
+
+.model3-background-container {
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+    /* z-index: -9999999; */
+    /* display: flex; */
+    /* Add flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    position: absolute;
+    display: none;
+}
+
+.model3-background-item {
+    position: relative;
+    width: 60vh;
+    height: 100%;
+    overflow: hidden;
+    }
+
+
+.model3-background-item img {
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* object-fit: cover; */
+    transform: scale(1.5);
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dark .model3-background-item img {
+    filter: invert();
+}
+
+.model3-background-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e0e0e0;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dark .model3-background-overlay {
+    background-color: #0B0B0C;
+}
+
+.transition-active .model3-background-overlay {
+    top: -100%;
+}
+
+/*-model4 background-*/
+
+.model4-background-container {
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+    /* z-index: -9999999; */
+    /* display: flex; */
+    /* Add flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    position: absolute;
+    display: none;
+}
+
+.model4-background-item {
+    position: relative;
+    width: 60vh;
+    height: 100%;
+    overflow: hidden;
+    }
+
+
+.model4-background-item img {
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* object-fit: cover; */
+    transform: scale(1.5);
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dark .model4-background-item img {
+    filter: invert();
+}
+
+.model4-background-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e0e0e0;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dark .model4-background-overlay {
+    background-color: #0B0B0C;
+}
+
+.transition-active .model4-background-overlay {
+    top: -100%;
+}
+
+.add-to-bag-button-container {
+    position: relative;
+    width: 260px;
+    height: 60px;
+    margin: 15px auto 0; /* Center horizontally and add margin at the top */
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: transparent;
+    color: #000;
+    border: 2px solid; /* Set border thickness */
+    border-radius: 40px; /* Set border radius for rounded corners */
+}
+
+.dark .add-to-bag-button-container {
+    color: #fff;
+}
+
+
+.add-to-bag-button-container button {
+    width: 100%;
+    height: 100%;
+    font-family: 'MetropolisRegular', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    background: #000000;
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    animation: anim2 0.7s steps(22) forwards;
+}
+
+.dark .add-to-bag-button-container button {
+    background-color:  #fff;
+    color: #000;
+}
+
+.add-to-bag-button-container button:hover {
+    animation: anim1 0.7s steps(22) forwards;
+}
+
+.add-to-bag-mask {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center vertically and horizontally */
+    color: #000000;
+    text-align: center;
+    width: 100%;
+    /* Adjust as needed */
+    font-family: 'MetropolisRegular', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    overflow: hidden;
+    letter-spacing: 0;
+}
+
+.dark .add-to-bag-mask {
+    color: #fff;
+}
+
+
+@keyframes anim1 {
+    from {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+
+    to {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+}
+
+@keyframes anim2 {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}
+
+/* responsive css */
+@media (max-width: 1800px) {
+    .product-left-text-container {
+        /* padding-top: 0px; */
+        letter-spacing: 0.02em;
+    }
+
+    .product-left-text-title {
+        /* padding-bottom: 5px; */
+        font-size: 42px;
+        /* padding-left: 220px; */
+    }
+
+    .product-left-text-header {
+        font-size: 15px;
+        line-height: 17 pt;
+        /* padding-left: 220px; */
+        max-width: 210px;
+    }
+
+    .product-left-text-bottom {
+        font-size: 16px;
+        line-height: 14pt;
+        letter-spacing: 0.008em;
+        /* padding-left: 240px; */
+    }
+
+    .color-options {
+        letter-spacing: 0.03em;
+        /* margin-right: 20px; */
+        /* top: 280px; */
+        /* right: 240px; */
+    }
+
+    .color-option {
+        font-size: 15px;
+        /* padding: 5px 10px;
+        margin-right: 10px; */
+    }
+
+    .price {
+        font-weight: 600;
+        font-size: 32px;
+        letter-spacing: 0.03em;
+        /* top: 330px;
+        right: 345px; */
+    }
+
+    .add-to-bag-button-container {
+        width: 210px;
+        height: 50px;
+    }
+
+    .add-to-bag-button-container button {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .add-to-bag-mask {
+        font-weight: 700;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1280px) {
+    /* .wrapper {
+        display: none;
+    } */
+
+    .product-left-text-container {
+        display: none;
+    }
+
+    .product-right-container {
+        position: fixed;
+        top: 30%;
+        left: 27%;
+        width: 50%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .color-option {
+        padding-bottom: 0px;
+        margin: 3px;
+    }
+
+    .price {
+        margin: 0;
+    }
+
+    .add-to-bag-button-container {
+        margin-top: 7px;
+        width: 200px;
+        height: 47px;
+    }
+
+    .botcontainer {
+        display: none;
+    }
+}

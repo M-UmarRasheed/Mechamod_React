@@ -1,0 +1,276 @@
+.cart-content {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* Initial position off-screen */
+    width: 60%;
+    height: 100%;
+    overflow: none;
+    background-color: #d3d3d3;
+    z-index: 2;
+    transition: right 0.3s ease;
+    /* Transition property for sliding effect */
+    box-shadow: -50px 0 200px rgba(0, 0, 0, 0.5);
+}
+
+.dark .cart-content {
+    background-color: #000;
+    box-shadow: -50px 0 200px rgba(255, 255, 255, 0.5);
+}
+
+
+.cart-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.cart-header {
+    color: #0b0b0c;
+    font-size: 50px;
+    /* Adjust font size as needed */
+    font-family: 'Hug Me Tight', sans-serif;
+    padding-top: 20px;
+    padding-left: 45px;
+}
+
+.continue-shopping {
+    text-align: right;
+    padding-right: 90px;
+    font-size: 22px;
+    font-family: 'MetropolisRegular', sans-serif;
+}
+
+
+.continue-shopping a {
+    color: #000;
+    text-decoration: none;
+}
+
+.dark .continue-shopping a {
+    color: #fff;
+}
+
+/*
+.cart-container {
+    display: flex;
+    /* height: 100vh; Remove this line */
+/*
+    font-family: 'MetropolisRegular', sans-serif;
+    padding-top: 70px;
+}*/
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    /* Added */
+    align-items: center;
+    font-family: 'MetropolisRegular', sans-serif;
+    padding-top: 100px;
+    width: 100%;
+    /* Added */
+}
+
+.cart-image {
+    width: 130px;
+    /* Adjust width as needed */
+    padding-left: 45px;
+}
+
+.cart-name {
+    flex: 1;
+    /* Takes up remaining space */
+    text-align: left;
+    width: auto;
+    /* Remove width constraint */
+}
+
+.cart-price,
+.cart-trash {
+    width: 20px;
+    /* margin-left: auto; /* Pushes the price and trash icon to the right */
+}
+
+.cart-trash {
+    padding-top: 2px;
+    padding-left: 3px;
+    padding-right: 90px;
+}
+
+.cart-trash-button {
+    background: none;
+    /* Remove background */
+    border: none;
+    /* Remove border */
+    padding: 0;
+}
+
+.cart-trash-button:focus {
+    outline: none;
+    /* Remove focus outline */
+}
+
+.cart-trash-button img {
+    display: block;
+    /* Ensure the image takes up the full space of the button */
+}
+
+
+
+#cart {
+    /* text-align: center; */
+    /* You might need to adjust the width or add max-width to #cart to prevent overflow */
+    max-width: 100%;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin-top: 60px; */
+}
+
+td {
+    padding: 0;
+    /* Adjusted padding */
+    text-align: left;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.dark td {
+    color: #fff;
+}
+
+/* .cart-price {
+    position: absolute;
+    right: 0;
+    /* padding-top: 65px; */
+/*
+    padding-right: 90px;
+    text-align: right;
+}
+
+.cart-name {
+    text-align: left;
+} */
+
+
+/* .cart-trash {
+    position: absolute;
+    right: 0;
+    padding-bottom: 100px;
+    padding-right: 60px; /* Adjust padding */
+/*
+} */
+
+
+th {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 25px;
+}
+
+.dark th {
+    color: #fff;
+}
+
+.dark .cart-header {
+    color: #fff;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+}
+
+.checkout-button,
+.continue-shopping-button {
+    font-family: 'MetropolisRegular', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+
+    border: 2px solid #000;
+    /* Adjust border styles as needed */
+    cursor: pointer;
+    margin-left: 10px;
+    /* Add margin between buttons */
+
+}
+
+.checkout-button {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 90px;
+}
+
+.continue-shopping-button {
+    background-color: transparent;
+    padding: 20px 40px;
+}
+
+.checkout-button:hover,
+.continue-shopping-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 1198px) {
+    .cart-content {
+        width: 80%;
+    }
+
+    .cart-header {
+        font-size: 30px;
+        /* Adjust font size as needed */
+        padding-top: 0px;
+        padding-left: 20px;
+    }
+
+    .continue-shopping {
+        padding-right: 10px;
+        font-size: 13px;
+        font-family: 'MetropolisRegular', sans-serif;
+    }
+
+    .cart-image {
+        width: 100px;
+        /* Adjust width as needed */
+        padding-left: 10px;
+    }
+
+    .cart-name {
+        font-size: 15px;
+    }
+
+    td { /*cart-price*/
+        font-size: 15px;
+        right: 0;
+    }
+
+    .cart-buttons {
+        bottom: 5%;
+        left: 5%;
+    }
+
+    .checkout-button,
+    .continue-shopping-button {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .checkout-button {
+        padding: 15px 60px;
+    }
+
+    .continue-shopping-button {
+        background-color: transparent;
+        padding: 15px 10px;
+    }
+}

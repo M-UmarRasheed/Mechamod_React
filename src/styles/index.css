@@ -1,0 +1,82 @@
+.index-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 55px;
+}
+
+.index-button {
+  width: 160px;
+  height: 32px;
+  background-color: #d3d3d3;
+  color: #000000;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  margin: 1.4px;
+  /* box-shadow: 2px 0px 3px rgba(0, 0, 0, .3); */
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 11px;
+}
+
+.dark .index-button {
+  background-color: #2a2525;
+  color: #E0E0E0;
+  border: 0;
+}
+
+.index-button:hover {}
+
+#previousBTN {
+  display: none;
+}
+
+#nextBTN {
+  animation: arrowAnimation 1s infinite alternate;
+  /* Add animation to the arrow */
+  
+}
+
+.index-arrow {
+
+
+}
+
+.index-arrow img {
+  width: 28px;
+  padding-top: 2px;
+  /* Adjust the width of the image */
+  height: 26px;
+  /* Maintain aspect ratio */
+  /* Optionally, you can add other styles here */
+}
+
+.dark .index-arrow img {
+  filter: invert();
+}
+
+@keyframes arrowAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-3px);
+  }
+}
+
+@media (max-width: 1280px) { 
+  .index-container {
+    padding-bottom: 7px;
+  }
+}

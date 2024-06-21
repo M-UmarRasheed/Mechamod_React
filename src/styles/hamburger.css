@@ -1,0 +1,199 @@
+input[type="checkbox"] {
+    appearance: none;
+}
+
+input[type="checkbox"]:checked~.container {
+    clip-path: circle(100%);
+    z-index: 1;
+}
+
+.button_li {
+    list-style-type: none;
+}
+
+.button {
+    color: #fff;
+    width: 7.5rem;
+    height: 7.5rem;
+    background: none;
+    border: 0;
+    margin: -200px auto;
+    padding: 0;
+    position: relative;
+    transform: translateX(-66%);
+    /* left: 50%; */
+    z-index: 99;
+}
+
+.container-button {
+    top: 8%;
+}
+
+.extra-space {
+    left: 98%;
+}
+
+.not_index_menu_button {
+    left: 49%;
+}
+
+.btn {
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.btn span {
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.25s;
+    display: inline-block;
+    position: relative;
+    cursor: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" fill="none" stroke="black" stroke-width="2"/></svg>'), auto;
+}
+
+.btn span:hover {
+    width: 160px;
+    height: 160px;
+    cursor: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" fill="none" stroke="black" stroke-width="2"/></svg>'), auto;
+}
+
+/**** OUTER BUTTON **************/
+
+.button-color-outer span {
+    background: #5555;
+}
+
+.dark .button-color-outer span {
+    background-color: #e0e0e0;
+}
+
+.button-lines {
+    width: 52px;
+    height: 1px;
+    background: #000;
+    margin-top: -1.5px;
+    margin-left: -26px;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.line-1 {
+    transform: translate3d(0, -8.5px, 0);
+}
+
+.line-2 {
+    transform: translate3d(0, 0, 0);
+}
+
+.line-3 {
+    transform: translate3d(0, 8.5px, 0);
+}
+
+/**** INNER BUTTON **************/
+
+.button-color-inner span {
+    background: #0b0b0c;
+    box-shadow: 0 0 13px #000;
+}
+
+.dark .button-color-inner span {
+    background: #e0e0e0;
+}
+
+.button-lines-inner {
+    width: 68px;
+    height: 1.4px;
+    background: #fff;
+    margin-top: -1.5px;
+    margin-left: -26px;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 44%;
+}
+
+.dark .button-lines-inner {
+    background: #000;
+}
+
+.line-4 {
+    transform: rotate(45deg);
+}
+
+.line-5 {
+    transform: rotate(-45deg);
+}
+
+/* I Dont Know What These Are For, BUT JUST IN CASE, KEEP THEM!
+  label {
+      width: 120px;
+      height: 120px;
+      z-index: 1;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 20px;
+      display: flex;
+      margin: 0 auto;
+  }
+    
+  label i {
+      color: #fff;
+      margin: auto;
+  }
+  */
+/***********************************************************************************/
+
+/* responsive css */
+@media (max-width: 1800px) {
+    .button {
+        width: 8.5rem;
+        height: 8.5rem;
+        margin: -170px auto;
+    }
+
+    .btn span {
+        width: 120px;
+        height: 120px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1198px) {
+    .button {
+        width: 8.5rem;
+        height: 8.5rem;
+        margin: -185px 30px;
+    }
+
+    .btn span {
+        width: 100px;
+        height: 100px;
+        font-size: 1em;
+    }
+
+    .button-lines {
+        width: 42px;
+        margin-left: -22px;
+    }
+
+
+    .button-lines-inner {
+        width: 50px;
+        height: 1.4px;
+        margin-top: -1.5px;
+        margin-left: -26px;
+        top: 50%;
+        left: 50%;
+    }
+}

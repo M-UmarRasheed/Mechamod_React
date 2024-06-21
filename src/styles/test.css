@@ -1,0 +1,59 @@
+.testcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.index-button {
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #000000;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+    margin: 1px;
+    box-shadow: 1px 0px 2px rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+  
+  .dark .index-button {
+    background-color: #2a2525;
+    color: #E0E0E0;
+    border: 0;
+  }
+  
+  .index-button:hover {}
+  
+  #previousBTN,
+  #nextBTN {
+    
+  }
+  
+  .index-arrow {
+    font-size: 24px; /* Adjust the font size of the arrow */
+    animation: arrowAnimation 1s infinite alternate; /* Add animation to the arrow */
+    text-align: left;
+    padding-right: 24px;
+    padding-left: 7px;
+  }
+  
+  @keyframes arrowAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-3px);
+    }
+  }
+  
